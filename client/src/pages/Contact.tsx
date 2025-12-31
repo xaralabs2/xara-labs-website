@@ -5,7 +5,7 @@ import { useSubmitContact } from "@/hooks/use-contact";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Loader2 } from "lucide-react";
+import { Mail, MapPin, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
@@ -54,31 +54,20 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-accent mt-1" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Email</h4>
-                  <p className="text-primary-foreground/80">hello@xaralabs.com</p>
-                  <p className="text-primary-foreground/80">careers@xaralabs.com</p>
+                  <p className="text-primary-foreground/80">hello@xaralabs.xyz</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-accent mt-1" />
                 <div>
-                  <h4 className="font-semibold text-lg mb-1">Office</h4>
+                  <h4 className="font-semibold text-lg mb-1">Location</h4>
                   <p className="text-primary-foreground/80">
-                    123 Innovation Drive<br />
-                    Suite 400<br />
-                    San Francisco, CA 94105
+                    San Jose, CA
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-accent mt-1" />
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Phone</h4>
-                  <p className="text-primary-foreground/80">+1 (555) 123-4567</p>
-                  <p className="text-xs text-primary-foreground/60 mt-2">Mon-Fri 9am-6pm PST</p>
-                </div>
-              </div>
             </div>
           </motion.div>
 

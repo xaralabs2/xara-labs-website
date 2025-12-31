@@ -45,11 +45,11 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail className="w-4 h-4" />
-                <span>hello@xaralabs.com</span>
+                <span>hello@xaralabs.xyz</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>San Jose, CA</span>
               </div>
               <div className="flex gap-4 pt-2">
                 <a href="#" className="hover:text-accent transition-colors"><Linkedin className="w-5 h-5" /></a>
