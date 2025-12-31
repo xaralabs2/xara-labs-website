@@ -63,7 +63,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Location</h4>
                   <p className="text-primary-foreground/80">
-                    San Jose, CA
+                    San Jose, CA. USA
                   </p>
                 </div>
               </div>

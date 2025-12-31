@@ -49,7 +49,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4" />
-                <span>San Jose, CA</span>
+                <span>San Jose, CA. USA</span>
               </div>
               <div className="flex gap-4 pt-2">
                 <a href="#" className="hover:text-accent transition-colors"><Linkedin className="w-5 h-5" /></a>
