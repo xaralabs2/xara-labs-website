@@ -71,7 +71,7 @@ export default function Services() {
       {/* Header */}
       <section className="bg-secondary/30 py-20 border-b border-border">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary">Our Services</h1>
+          <h1 className="text-4xl md:text-6xl font-bold  mb-6 text-primary">Our Services</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Comprehensive technical capabilities designed to solve complex enterprise challenges. 
             From strategy to execution, we are your partners in innovation.
@@ -96,7 +96,7 @@ export default function Services() {
                 <div className="mb-6 p-4 bg-primary/5 rounded-full inline-block">
                   {service.icon}
                 </div>
-                <h2 className="text-3xl font-bold font-display mb-4 text-foreground">{service.title}</h2>
+                <h2 className="text-3xl font-bold  mb-4 text-foreground">{service.title}</h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   {service.description}
                 </p>
@@ -130,7 +130,7 @@ export default function Services() {
       {/* CTA */}
       <section className="container mx-auto px-6 text-center py-12">
         <div className="bg-primary rounded-2xl p-12 shadow-2xl shadow-primary/20">
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-6 text-white">Not sure what you need?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold  mb-6 text-white">Not sure what you need?</h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Our strategic consultants can help assess your current landscape and define a technical roadmap tailored to your business goals.
           </p>

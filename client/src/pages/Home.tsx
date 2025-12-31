@@ -33,7 +33,7 @@ export default function Home() {
             <div className="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-accent uppercase bg-accent/10 rounded-full border border-accent/20">
               Enterprise Engineering
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold font-display leading-tight mb-8 text-foreground">
+            <h1 className="text-5xl md:text-7xl font-bold  leading-tight mb-8 text-foreground">
               Building the Future with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Intelligent Systems</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
@@ -67,7 +67,7 @@ export default function Home() {
               { label: "Global Reach", value: "24/7" },
             ].map((stat, i) => (
               <div key={i} className="text-center md:text-left">
-                <div className="text-3xl md:text-4xl font-bold font-display text-primary mb-1">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-bold  text-primary mb-1">{stat.value}</div>
                 <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Core Competencies</h2>
+              <h2 className="text-3xl md:text-4xl font-bold  mb-4">Core Competencies</h2>
               <p className="text-lg text-muted-foreground">
                 We deliver end-to-end technical capabilities designed for resilience, scalability, and long-term value.
               </p>
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary rounded-sm flex items-center justify-center text-white mb-8 shadow-xl shadow-primary/20">
                 <Globe className="w-8 h-8" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">Engineered for Impact</h2>
+              <h2 className="text-3xl md:text-4xl font-bold  mb-6">Engineered for Impact</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 At Xara Labs, we don't just write code; we solve fundamental business challenges through technology. Our approach combines rigorous engineering standards with strategic business insight.
               </p>
@@ -180,7 +180,7 @@ export default function Home() {
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-white">Ready to Transform Your Business?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold  mb-6 text-white">Ready to Transform Your Business?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10">
             Let's discuss how Xara Labs can help you build the intelligent systems of tomorrow, today.
           </p>

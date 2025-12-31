@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 bg-white text-primary rounded-sm flex items-center justify-center font-bold font-serif text-xl">
+              <div className="w-8 h-8 bg-white text-primary rounded-sm flex items-center justify-center font-bold  text-xl">
                 X
               </div>
-              <span className="text-xl font-bold font-display tracking-tight text-white">
+              <span className="text-xl font-bold  tracking-tight text-white">
                 Xara Labs
               </span>
             </Link>
@@ -21,7 +21,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-white font-display">Services</h4>
+            <h4 className="text-lg font-semibold mb-6 text-white ">Services</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li><Link href="/services" className="hover:text-white transition-colors">AI & Intelligent Systems</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors">Software Development</Link></li>
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-white font-display">Company</h4>
+            <h4 className="text-lg font-semibold mb-6 text-white ">Company</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-white font-display">Connect</h4>
+            <h4 className="text-lg font-semibold mb-6 text-white ">Connect</h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail className="w-4 h-4" />

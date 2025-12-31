@@ -33,7 +33,7 @@ export default function Contact() {
     <div className="min-h-screen pt-24 pb-20 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto mb-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-display mb-6 text-primary">Get in Touch</h1>
+          <h1 className="text-4xl md:text-5xl font-bold  mb-6 text-primary">Get in Touch</h1>
           <p className="text-xl text-muted-foreground">
             Have a project in mind? Let's discuss how we can help you achieve your technical goals.
           </p>
@@ -47,7 +47,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-1 bg-primary text-primary-foreground p-10 rounded-lg shadow-xl"
           >
-            <h3 className="text-2xl font-bold font-display mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-bold  mb-8">Contact Information</h3>
             
             <div className="space-y-8">
               <div className="flex items-start gap-4">
@@ -78,7 +78,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-2 bg-white p-10 rounded-lg shadow-xl border border-border"
           >
-            <h3 className="text-2xl font-bold font-display mb-8 text-foreground">Send us a Message</h3>
+            <h3 className="text-2xl font-bold  mb-8 text-foreground">Send us a Message</h3>
             
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

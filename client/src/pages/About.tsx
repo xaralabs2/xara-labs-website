@@ -13,7 +13,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold font-display mb-8 text-primary">
+          <h1 className="text-4xl md:text-6xl font-bold  mb-8 text-primary">
             Engineering Excellence for the Enterprise
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
@@ -36,7 +36,7 @@ export default function About() {
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
                   {val.icon}
                 </div>
-                <h3 className="text-xl font-bold font-display mb-3">{val.title}</h3>
+                <h3 className="text-xl font-bold  mb-3">{val.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{val.text}</p>
               </div>
             ))}
@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold font-display text-primary">Our Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold  text-primary">Our Expertise</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Our team consists of industry veterans who have led technical initiatives at Fortune 500 companies and high-growth startups. We understand the unique challenges of operating at scale.
             </p>

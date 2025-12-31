@@ -34,10 +34,10 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center text-white font-bold font-serif text-xl group-hover:bg-accent transition-colors">
+          <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center text-white font-bold  text-xl group-hover:bg-accent transition-colors">
             X
           </div>
-          <span className="text-xl font-bold font-display tracking-tight text-primary">
+          <span className="text-xl font-bold  tracking-tight text-primary">
             Xara Labs
           </span>
         </Link>
