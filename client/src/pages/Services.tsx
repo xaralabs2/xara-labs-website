@@ -47,7 +47,7 @@ export default function Services() {
       </section>
 
       {/* AI Solutions Section */}
-      <section className="container mx-auto px-6 py-20">
+      <section id="ai-solutions" className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto mb-16">
           <div className="flex items-center gap-4 mb-6">
             <div className="p-3 bg-primary/10 rounded-full">
@@ -81,7 +81,7 @@ export default function Services() {
       </section>
 
       {/* Engineering Services Section */}
-      <section className="bg-secondary/30 py-20 border-y border-border">
+      <section id="engineering-services" className="bg-secondary/30 py-20 border-y border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-16">
             <div className="flex items-center gap-4 mb-6">

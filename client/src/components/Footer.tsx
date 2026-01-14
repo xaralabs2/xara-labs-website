@@ -23,8 +23,8 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Solutions</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li><Link href="/services" className="hover:text-white transition-colors" data-testid="link-footer-ai-solutions">AI Solutions</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors" data-testid="link-footer-engineering-services">Engineering Services</Link></li>
+              <li><a href="/services#ai-solutions" className="hover:text-white transition-colors" data-testid="link-footer-ai-solutions">AI Solutions</a></li>
+              <li><a href="/services#engineering-services" className="hover:text-white transition-colors" data-testid="link-footer-engineering-services">Engineering Services</a></li>
               <li><Link href="/products" className="hover:text-white transition-colors" data-testid="link-footer-xara-cortex">Xara Cortex</Link></li>
             </ul>
           </div>
