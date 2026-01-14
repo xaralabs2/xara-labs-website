@@ -60,10 +60,8 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/contact">
-            <button className="px-5 py-2 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
+          <Link href="/contact" className="px-5 py-2 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" data-testid="button-get-started">
               Get Started
-            </button>
           </Link>
         </div>
 
@@ -95,10 +93,8 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full py-3 mt-4 rounded-sm bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
-                Get Started
-              </button>
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="w-full py-3 mt-4 rounded-sm bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors text-center block" data-testid="button-get-started-mobile">
+              Get Started
             </Link>
           </div>
         </div>
