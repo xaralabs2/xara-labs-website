@@ -1,8 +1,23 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Award, Briefcase, Users, Target } from "lucide-react";
+import { Shield, Layers, Settings, Eye, Zap } from "lucide-react";
 
 export default function About() {
+  const whyXaraLabs = [
+    { icon: <Settings className="w-5 h-5" />, text: "Enterprise-grade engineering" },
+    { icon: <Layers className="w-5 h-5" />, text: "Platform-agnostic AI solutions" },
+    { icon: <Shield className="w-5 h-5" />, text: "Optional proprietary infrastructure" },
+    { icon: <Eye className="w-5 h-5" />, text: "Governance built into every system" },
+    { icon: <Zap className="w-5 h-5" />, text: "Designed for scale, audit, and longevity" }
+  ];
+
+  const industries = [
+    "Logistics & Mobility",
+    "Real Estate & PropTech",
+    "Enterprise Operations",
+    "Financial & Risk Platforms"
+  ];
+
   return (
     <div className="min-h-screen pt-24 pb-20">
       {/* Header */}
@@ -13,69 +28,108 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold  mb-8 text-primary">
-            Engineering Excellence for the Enterprise
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 text-primary" data-testid="text-about-title">
+            Enterprise Engineering for Intelligent Systems
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Xara Labs was founded on a simple premise: complex problems require elegant, robust solutions. We are a collective of senior engineers, architects, and strategists dedicated to pushing the boundaries of what's possible with technology.
+          <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+            Xara Labs builds AI solutions for real businesses and develops Xara Cortex — a standalone AI decision infrastructure platform.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            We partner with enterprises to design, engineer, and operate intelligent systems that scale, remain governed, and deliver measurable outcomes.
           </p>
         </motion.div>
       </section>
 
-      {/* Values/Mission */}
+      {/* Why Xara Labs */}
       <section className="bg-secondary/30 py-20 border-y border-border">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: <Target />, title: "Precision", text: "We believe in exactitude. Every line of code serves a purpose; every architectural decision is deliberate." },
-              { icon: <Award />, title: "Quality", text: "We do not compromise on quality. Our systems are built to last, scale, and perform under pressure." },
-              { icon: <Briefcase />, title: "Business Focus", text: "Technology is a tool for business growth. We align every technical deliverable with your ROI." },
-              { icon: <Users />, title: "Partnership", text: "We are not just vendors; we are extension of your team, invested in your long-term success." }
-            ].map((val, i) => (
-              <div key={i} className="bg-background p-8 rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
-                  {val.icon}
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Why Xara Labs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {whyXaraLabs.map((item, i) => (
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-background p-6 rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow flex items-center gap-4"
+              >
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+                  {item.icon}
                 </div>
-                <h3 className="text-xl font-bold  mb-3">{val.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{val.text}</p>
-              </div>
+                <span className="font-medium text-foreground">{item.text}</span>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Leadership/Team focus */}
-      <section className="container mx-auto px-6 py-24">
-        <div className="flex flex-col md:flex-row gap-16 items-center">
-          <div className="flex-1">
-            {/* Using a placeholder image with Unsplash source comment */}
-            {/* corporate office modern architecture building */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-accent/20 rounded-lg transform rotate-3" />
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
-                alt="Modern Office Architecture" 
-                className="relative rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/3]"
-              />
-            </div>
+      {/* Industries */}
+      <section className="container mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Industries We Serve</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {industries.map((industry, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-card border border-border rounded-lg p-8 text-center hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-xl font-bold text-foreground">{industry}</h3>
+              </motion.div>
+            ))}
           </div>
-          <div className="flex-1 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold  text-primary">Our Expertise</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Our team consists of industry veterans who have led technical initiatives at Fortune 500 companies and high-growth startups. We understand the unique challenges of operating at scale.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We specialize in bridging the gap between visionary executive strategy and rigorous technical execution. Whether you need a CTO-level consultation or a SWAT team of engineers to rescue a project, Xara Labs brings the necessary firepower.
-            </p>
-            <div className="pt-4">
-              <Link href="/services">
-                <button className="text-accent font-semibold hover:text-primary transition-colors flex items-center gap-2">
-                  View our capabilities <span className="text-xl">→</span>
-                </button>
-              </Link>
+        </div>
+      </section>
+
+      {/* Our Approach */}
+      <section className="bg-primary/5 py-20 border-t border-border">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-16 items-center max-w-5xl mx-auto">
+            <div className="flex-1">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-accent/20 rounded-lg transform rotate-3" />
+                <img 
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                  alt="Modern Office Architecture" 
+                  className="relative rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/3]"
+                />
+              </div>
+            </div>
+            <div className="flex-1 space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Approach</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We work inside your environment, with your tools, and your constraints. Our team brings hands-on engineering expertise for enterprises building or modernizing AI-powered systems.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Every system we build is designed for scale, audit, and longevity — with governance built in from day one.
+              </p>
+              <div className="pt-4">
+                <Link href="/services">
+                  <button className="text-accent font-semibold hover:text-primary transition-colors flex items-center gap-2">
+                    Explore our solutions <span className="text-xl">→</span>
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className="container mx-auto px-6 py-20 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build Something Real</h2>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Whether you need a custom AI solution, engineering expertise, or a decision infrastructure platform, Xara Labs meets you where you are.
+        </p>
+        <Link href="/contact">
+          <button className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-sm hover:bg-primary/90 transition-all" data-testid="button-talk-to-us">
+            Talk to Xara Labs
+          </button>
+        </Link>
       </section>
     </div>
   );

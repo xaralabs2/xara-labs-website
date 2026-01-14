@@ -13,17 +13,42 @@ Professional corporate website for Xara Labs LLC, a technology consulting compan
 - Fonts: Inter (clean sans-serif throughout)
 
 ## Pages
-- Home (/) - Hero, services overview, CTA
-- Services (/services) - Detailed service descriptions
-- About (/about) - Company background and credibility
+- Home (/) - Hero, What We Do overview, Industries, Why Xara Labs
+- Services (/services) - AI Solutions and Engineering Services
+- Products (/products) - Xara Cortex product page
+- About (/about) - Company info, Why Xara Labs, Industries
 - Contact (/contact) - Contact form and information
+- Privacy (/privacy) - Privacy Policy
+- Terms (/terms) - Terms of Service
 
-## Services Offered
-- AI & Intelligent Systems
-- Custom Software Development
-- Data & Platform Engineering
-- Technical Strategy & Roadmaps
-- Team Augmentation & Embedded Expertise
+## What We Do
+Three main areas:
+- AI Solutions (Outcome-focused intelligent systems)
+- Engineering Services (Enterprise-grade AI and platform engineering)
+- Products (Xara Cortex - AI Decision Infrastructure)
+
+## AI Solutions
+- Intelligent Operations Automation
+- Risk, Trust & Compliance Systems
+- Predictive Intelligence & Optimization
+- Document & Knowledge Intelligence
+- Customer & Internal AI Assist Systems
+
+## Engineering Services
+- AI system architecture & strategy
+- AI product and platform engineering
+- ML / LLM implementation & integration
+- MLOps, monitoring & reliability engineering
+- AI governance, audit & compliance controls
+
+## Products
+- Xara Cortex™ - AI Decision & Control Infrastructure
+
+## Industries
+- Logistics & Mobility
+- Real Estate & PropTech
+- Enterprise Operations
+- Financial & Risk Platforms
 
 ## Contact Information
 - Email: hello@xaralabs.xyz

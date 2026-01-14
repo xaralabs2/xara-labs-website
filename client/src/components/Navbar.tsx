@@ -18,7 +18,8 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
+    { href: "/services", label: "Solutions" },
+    { href: "/products", label: "Products" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
@@ -48,6 +49,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              data-testid={`link-nav-${link.label.toLowerCase()}`}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-accent relative py-1",
                 location === link.href

@@ -16,17 +16,16 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
-              Building the future with intelligent systems, custom software, and strategic innovation for enterprise scale.
+              Enterprise engineering for intelligent systems. We design, engineer, and operate AI solutions that scale and deliver measurable outcomes.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-white ">Services</h4>
+            <h4 className="text-lg font-semibold mb-6 text-white">Solutions</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li><Link href="/services" className="hover:text-white transition-colors">AI & Intelligent Systems</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors">Software Development</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors">Platform Engineering</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors">Technical Strategy</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors" data-testid="link-footer-ai-solutions">AI Solutions</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors" data-testid="link-footer-engineering-services">Engineering Services</Link></li>
+              <li><Link href="/products" className="hover:text-white transition-colors" data-testid="link-footer-xara-cortex">Xara Cortex</Link></li>
             </ul>
           </div>
 

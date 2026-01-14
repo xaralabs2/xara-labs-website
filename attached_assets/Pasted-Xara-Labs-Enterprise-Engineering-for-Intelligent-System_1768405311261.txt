@@ -1,0 +1,137 @@
+Xara Labs
+Enterprise Engineering for Intelligent Systems
+
+Xara Labs builds AI solutions for real businesses and develops Xara Cortex — a standalone AI decision infrastructure platform.
+
+We partner with enterprises to design, engineer, and operate intelligent systems that scale, remain governed, and deliver measurable outcomes.
+
+Primary CTAs
+
+Explore Solutions
+
+View Products
+
+What We Do
+
+Xara Labs operates across three distinct areas, allowing clients to engage us flexibly.
+
+AI Solutions
+
+Outcome-driven intelligent systems tailored to specific business problems.
+
+Engineering Services
+
+Enterprise-grade AI and platform engineering, delivered end-to-end.
+
+Products
+
+Proprietary AI infrastructure platforms, including Xara Cortex.
+
+AI Solutions (Outcome-Focused)
+
+We design and deploy AI solutions that operate inside real business workflows — not demos, not experiments.
+
+Our core solution areas include:
+
+Intelligent Operations Automation
+Automate decisions, escalations, and approvals across complex workflows.
+
+Risk, Trust & Compliance Systems
+AI-driven verification, trust scoring, and policy enforcement.
+
+Predictive Intelligence & Optimization
+Forecast outcomes, optimize resources, and improve real-time decisions.
+
+Document & Knowledge Intelligence
+Extract, validate, and reason over structured and unstructured documents.
+
+Customer & Internal AI Assist Systems
+AI copilots for support teams, operations, and internal users.
+
+➡️ Explore AI Solutions
+
+Engineering Services (Delivery-Focused)
+
+Xara Labs provides hands-on engineering services for enterprises building or modernizing AI-powered systems.
+
+Our services include:
+
+AI system architecture & strategy
+
+AI product and platform engineering
+
+ML / LLM implementation & integration
+
+MLOps, monitoring & reliability engineering
+
+AI governance, audit & compliance controls
+
+We work inside your environment, with your tools, and your constraints.
+
+➡️ View Engineering Services
+
+Products Built by Xara Labs
+Xara Cortex™
+
+AI Decision & Control Infrastructure
+
+Xara Cortex is a standalone platform that sits between applications and AI execution, enforcing control before any AI action is allowed to run.
+
+Cortex provides:
+
+Model Control — which AI is allowed
+
+Agent Control — what AI can do
+
+Workflow Control — execution order
+
+Policy Control — non-negotiable constraints
+
+Full audit and observability
+
+Cortex is optional and licensed separately.
+
+➡️ Learn About Xara Cortex
+
+How Cortex Fits (When Needed)
+Application / User
+        |
+        v
+   Cortex Control Layer
+        |
+   Approved AI Execution
+        |
+   Logged, bounded outcomes
+
+
+Xara Labs services do not require Cortex. Cortex is available where reusable, governed AI decision infrastructure is needed.
+
+Industries We Serve
+
+Logistics & Mobility
+
+Real Estate & PropTech
+
+Enterprise Operations
+
+Financial & Risk Platforms
+
+Why Xara Labs
+
+Enterprise-grade engineering
+
+Platform-agnostic AI solutions
+
+Optional proprietary infrastructure
+
+Governance built into every system
+
+Designed for scale, audit, and longevity
+
+Let’s Build Something Real
+
+Whether you need a custom AI solution, engineering expertise, or a decision infrastructure platform, Xara Labs meets you where you are.
+
+CTA
+
+Talk to Xara Labs

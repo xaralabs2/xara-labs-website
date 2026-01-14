@@ -1,69 +1,37 @@
 import { motion } from "framer-motion";
-import { Brain, Code, Database, Users, Map, CheckCircle2 } from "lucide-react";
+import { Brain, Code, Database, Users, Shield, FileText, Headphones, TrendingUp, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Services() {
-  const sections = [
+  const aiSolutions = [
     {
-      id: "ai",
-      icon: <Brain className="w-10 h-10 text-accent" />,
-      title: "AI & Intelligent Systems",
-      description: "We design and deploy sophisticated AI models that automate processes, unlock insights, and create competitive advantages.",
-      features: [
-        "Predictive Analytics & Forecasting",
-        "Natural Language Processing (NLP)",
-        "Computer Vision Solutions",
-        "Automated Decision Engines"
-      ]
+      title: "Intelligent Operations Automation",
+      description: "Automate decisions, escalations, and approvals across complex workflows."
     },
     {
-      id: "software",
-      icon: <Code className="w-10 h-10 text-accent" />,
-      title: "Custom Software Development",
-      description: "Tailor-made software solutions built on robust, scalable architectures that grow with your enterprise.",
-      features: [
-        "Full-Stack Web Applications",
-        "Microservices Architecture",
-        "Legacy System Modernization",
-        "High-Performance APIs"
-      ]
+      title: "Risk, Trust & Compliance Systems",
+      description: "AI-driven verification, trust scoring, and policy enforcement."
     },
     {
-      id: "platform",
-      icon: <Database className="w-10 h-10 text-accent" />,
-      title: "Data & Platform Engineering",
-      description: "Building the foundation for your digital success with secure, scalable cloud infrastructure and data pipelines.",
-      features: [
-        "Cloud Infrastructure (AWS/Azure/GCP)",
-        "Data Warehousing & Lakes",
-        "DevOps & CI/CD Pipelines",
-        "Security & Compliance Audits"
-      ]
+      title: "Predictive Intelligence & Optimization",
+      description: "Forecast outcomes, optimize resources, and improve real-time decisions."
     },
     {
-      id: "strategy",
-      icon: <Map className="w-10 h-10 text-accent" />,
-      title: "Technical Strategy & Roadmaps",
-      description: "Aligning technology investments with business goals through comprehensive strategic planning.",
-      features: [
-        "Digital Transformation Strategy",
-        "Technology Due Diligence",
-        "Architecture Reviews",
-        "Product Roadmapping"
-      ]
+      title: "Document & Knowledge Intelligence",
+      description: "Extract, validate, and reason over structured and unstructured documents."
     },
     {
-      id: "team",
-      icon: <Users className="w-10 h-10 text-accent" />,
-      title: "Team Augmentation",
-      description: "Injecting specialized expertise into your existing teams to accelerate delivery and upskill your workforce.",
-      features: [
-        "Embedded Senior Engineers",
-        "Technical Leadership",
-        "Specialized Skill Sets",
-        "Agile Process Coaching"
-      ]
+      title: "Customer & Internal AI Assist Systems",
+      description: "AI copilots for support teams, operations, and internal users."
     }
+  ];
+
+  const engineeringServices = [
+    "AI system architecture & strategy",
+    "AI product and platform engineering",
+    "ML / LLM implementation & integration",
+    "MLOps, monitoring & reliability engineering",
+    "AI governance, audit & compliance controls"
   ];
 
   return (
@@ -71,72 +39,98 @@ export default function Services() {
       {/* Header */}
       <section className="bg-secondary/30 py-20 border-b border-border">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold  mb-6 text-primary">Our Services</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary" data-testid="text-services-title">Solutions & Services</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Comprehensive technical capabilities designed to solve complex enterprise challenges. 
-            From strategy to execution, we are your partners in innovation.
+            We design and deploy AI solutions that operate inside real business workflows — not demos, not experiments.
           </p>
         </div>
       </section>
 
-      {/* Services List */}
-      <div className="container mx-auto px-6 py-20 space-y-24">
-        {sections.map((service, index) => (
-          <motion.div 
-            key={service.id}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className={`flex flex-col md:flex-row gap-12 items-start ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
-          >
-            <div className="flex-1 bg-card border border-border rounded-lg p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110" />
-              <div className="relative z-10">
-                <div className="mb-6 p-4 bg-primary/5 rounded-full inline-block">
-                  {service.icon}
-                </div>
-                <h2 className="text-3xl font-bold  mb-4 text-foreground">{service.title}</h2>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  {service.description}
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {service.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="font-medium text-foreground/80">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+      {/* AI Solutions Section */}
+      <section className="container mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="p-3 bg-primary/10 rounded-full">
+              <Brain className="w-8 h-8 text-primary" />
+            </div>
+            <div>
+              <span className="text-sm font-semibold text-accent uppercase tracking-wider">Outcome-Focused</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">AI Solutions</h2>
+            </div>
+          </div>
+          <p className="text-lg text-muted-foreground mb-12">
+            We design and deploy AI solutions that operate inside real business workflows — not demos, not experiments.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {aiSolutions.map((solution, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow"
+            >
+              <h3 className="text-xl font-bold mb-3 text-foreground">{solution.title}</h3>
+              <p className="text-muted-foreground">{solution.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Engineering Services Section */}
+      <section className="bg-secondary/30 py-20 border-y border-border">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-accent/10 rounded-full">
+                <Code className="w-8 h-8 text-accent" />
+              </div>
+              <div>
+                <span className="text-sm font-semibold text-accent uppercase tracking-wider">Delivery-Focused</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">Engineering Services</h2>
               </div>
             </div>
-            
-            {/* Visual/Context side - purely decorative for now, could be images */}
-            <div className="flex-1 flex flex-col justify-center h-full min-h-[300px] bg-secondary/20 rounded-lg p-10 border border-border/50">
-              <div className="space-y-4 opacity-50">
-                <div className="h-4 bg-foreground/10 rounded w-3/4"></div>
-                <div className="h-4 bg-foreground/10 rounded w-full"></div>
-                <div className="h-4 bg-foreground/10 rounded w-5/6"></div>
-                <div className="h-32 bg-foreground/5 rounded w-full border border-foreground/10 mt-8 flex items-center justify-center font-mono text-xs">
-                  // {service.id} visualization
-                </div>
-              </div>
+            <p className="text-lg text-muted-foreground mb-8">
+              Xara Labs provides hands-on engineering services for enterprises building or modernizing AI-powered systems.
+            </p>
+            <p className="text-lg text-foreground font-medium italic">
+              We work inside your environment, with your tools, and your constraints.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {engineeringServices.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="flex items-center gap-3 bg-background p-4 rounded-lg border border-border"
+                >
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="font-medium text-foreground">{service}</span>
+                </motion.div>
+              ))}
             </div>
-          </motion.div>
-        ))}
-      </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-6 text-center py-12">
+      <section className="container mx-auto px-6 text-center py-20">
         <div className="bg-primary rounded-2xl p-12 shadow-2xl shadow-primary/20">
-          <h2 className="text-3xl md:text-4xl font-bold  mb-6 text-white">Not sure what you need?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to discuss your project?</h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Our strategic consultants can help assess your current landscape and define a technical roadmap tailored to your business goals.
+            Whether you need a custom AI solution or hands-on engineering expertise, we're ready to help.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-white transition-all">
-              Schedule a Consultation
+            <button className="px-8 py-4 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-white transition-all" data-testid="button-schedule-consultation">
+              Talk to Xara Labs
             </button>
           </Link>
         </div>
