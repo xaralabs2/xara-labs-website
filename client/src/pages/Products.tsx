@@ -22,7 +22,7 @@ export default function Products() {
             AI Decision & Control Infrastructure
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Xara Cortex is a standalone platform that sits between applications and AI execution, enforcing control before any AI action is allowed to run.
+            Xara Cortex is the AI control layer that governs how applications interact with AI models, ensuring every AI decision is governed, auditable, cost-controlled, and safe for enterprise use.
           </p>
         </div>
       </section>
