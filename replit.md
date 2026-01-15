@@ -51,7 +51,7 @@ Three main areas:
 - Financial & Risk Platforms
 
 ## Contact Information
-- Email: hello@xaralabs.xyz
+- Email: hello@xaralabs.ai
 - Location: San Jose, CA
 
 ## Development

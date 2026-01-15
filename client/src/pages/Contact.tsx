@@ -54,7 +54,7 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-accent mt-1" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Email</h4>
-                  <p className="text-primary-foreground/80">hello@xaralabs.xyz</p>
+                  <p className="text-primary-foreground/80">hello@xaralabs.ai</p>
                 </div>
               </div>
               

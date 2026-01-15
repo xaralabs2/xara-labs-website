@@ -77,8 +77,8 @@ export default function Privacy() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
                 If you have any questions about this privacy policy or our data practices, please contact us at{" "}
-                <a href="mailto:hello@xaralabs.xyz" className="text-foreground underline hover:no-underline">
-                  hello@xaralabs.xyz
+                <a href="mailto:hello@xaralabs.ai" className="text-foreground underline hover:no-underline">
+                  hello@xaralabs.ai
                 </a>.
               </p>
             </section>

@@ -44,8 +44,8 @@ export default {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            from: 'Xara Labs Website <noreply@xaralabs.xyz>',
-            to: ['hello@xaralabs.xyz'],
+            from: 'Xara Labs Website <noreply@xaralabs.ai>',
+            to: ['hello@xaralabs.ai'],
             subject: `New Contact Inquiry from ${body.name}`,
             html: `
               <h2>New Contact Form Submission</h2>
