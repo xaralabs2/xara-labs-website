@@ -1,0 +1,7 @@
+name = "xara-labs-contact"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Add your Resend API key as a secret instead:
+# wrangler secret put RESEND_API_KEY
